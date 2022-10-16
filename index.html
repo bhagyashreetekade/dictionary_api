@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Dictionary API</title>
 </head>
-<body class="bg-purple-500">
 
-    <audio id="sound" scr=""></audio>
-    <div class="main bg-white w-auto absolute left-[34rem] top-72 px-6 py-10 rounded-md ">
-        <div class="search-box flex flex-row space-x-4">
-            <input type="text" placeholder="Type the word here..." id="inp-word" class="font-serif w-72 h-10 border outline-none border-indigo-700 border-x-0 border-t-0 border-b-2  px-2 font-normal text-lg" />
-            <button id="search-btn" class="text-lg bg-indigo-700 font-serif p-1 px-5 rounded-sm">Search</button>
-        </div>
-
-        <div id="result">
-            
-        </div>
-    </div>
+<body >
+    <div class="h-screen flex items-center justify-center bg-no-repeat">
+        <div class="flex items-center justify-center ">
+            <img src="bg.jpg" alt="" class=" h-screen w-screen z-0 ">
+            <audio id="sound" scr=""></audio>
+            <div class="main bg-white px-3 py-8 rounded-md w-3/4 sm:w-auto sm:px-6 sm:py-10 absolute">
+                <div class="search-box flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center items-center ">
+                    <input type="text" placeholder="Type the word here..." id="inp-word"
+                        class="font-serif w-11/12 sm:w-72 h-10 border outline-none border-indigo-700 border-x-0 border-t-0 border-b-2  px-2 font-normal text-lg" />
+                    <button id="search-btn" class="text-lg bg-indigo-700 font-serif p-1 px-5 rounded-md text-white hover:bg-indigo-800">Search</button>
+                </div>
     
-
-
+                <div id="result">
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
     <script src="app.js" type="module"></script>
 </body>
+
 </html>

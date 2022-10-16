@@ -14,12 +14,12 @@ search_btn.addEventListener("click",()=>{
         console.log(data);
 
         result.innerHTML=`
-            <div class="word flex flex-row justify-between ">
-                <h3 class="text-lg font-medium font-serif pt-10">${inp_word}</h3>
-                <button onclick="playSound()" class="pt-10"><i class="fas fa-volume-up"></i></button>
+            <div class="word flex flex-row justify-between pt-5 sm:pt-10  ">
+                <h3 class="text-2xl font-serif font-bold">${inp_word}</h3>
+                <button onclick="playSound()" class=""><i class="fas fa-volume-up"></i></button>
             </div>
 
-            <div class="details">
+            <div class="details font-medium">
                 <p>${data[0].meanings[0].partOfSpeech}</p>
                 
             </div>
